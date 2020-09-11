@@ -13,7 +13,7 @@ int main() {
 	int count_of_koef = 3;
 	std::cout << "Please, enter coefficients of quadratic equation:" << std::endl;
 	koef = get_numbers(koef, count_of_koef);
-	if (koef[0] != 0){
+	if (koef[0] != 0) {
 		double discrim = find_discrim(koef);
 		if (discrim < 0){
 		    std::cout << "Equastion doesn't have any root" << std::endl;
@@ -38,7 +38,7 @@ int main() {
 
 
 double* get_numbers(double* koef, int size) {
-	koef = (double*)malloc(size * sizeof(double));
+	koef = (double*)malloc(size* sizeof(double));
 	for (int i = 0; i < size; i++) {
 	    std::cin >> koef[i];
 	}
